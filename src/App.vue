@@ -48,8 +48,8 @@ export default {
       async getEmployees() {
         try {
           const response = await fetch('https://jsonplaceholder.typicode.com/users')
-          const data = await response.json()
-          this.employees = data
+          const aData = await response.json()
+          this.employees = aData
         } catch (error) {
           console.error(error)
         }
